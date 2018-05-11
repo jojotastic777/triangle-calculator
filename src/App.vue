@@ -1,29 +1,47 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <tri-calc />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import TriCalc from './components/TriCalc.vue';
 
 export default Vue.extend({
   name: 'app',
   components: {
-    HelloWorld
+    TriCalc
   }
 });
 </script>
 
 <style lang="scss">
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  color: #d0d2d5;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: #101215;
+  margin: 0;
+  padding: 10px;
+  height: 100%;
+  box-sizing: border-box;
 }
+
+#app input {
+  background-color: #15171a;
+  color: #d0d2d5;
+  border: none;
+  border-radius: 3px;
+  padding: 3px;
+}
+
 </style>
