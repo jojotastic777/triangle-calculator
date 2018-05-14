@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <tri-calc />
+    <angle-from-angle />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import TriCalc from './components/TriCalc.vue';
+import AngleFromAngle from './components/AngleFromAngle.vue';
 
 export default Vue.extend({
   name: 'app',
   components: {
-    TriCalc
+    TriCalc,
+    AngleFromAngle
   }
 });
 </script>
@@ -34,6 +37,8 @@ body, html {
   padding: 10px;
   height: 100%;
   box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
 }
 
 #app input {

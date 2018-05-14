@@ -94,6 +94,7 @@ export default Vue.extend({
     border-color: #1a1c1f;
     border-style: solid;
     border-radius: 3px;
+    margin: 5px;
   }
 
   .tri-calc .title {
